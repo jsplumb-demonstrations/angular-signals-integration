@@ -2,7 +2,7 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core'
 import {NodeComponent} from "./node.component"
 
 import { DEFAULT, AbsoluteLayout, Surface, AnchorLocations } from "@jsplumbtoolkit/browser-ui"
-import {BrowserUIAngular, jsPlumbSurfaceComponent} from "@jsplumbtoolkit/browser-ui-angular"
+import {BrowserUIAngular, SurfaceComponent} from "@jsplumbtoolkit/browser-ui-angular"
 
 @Component({
   selector: 'app-root-signals-integration',
@@ -14,7 +14,7 @@ export class AppComponent implements AfterViewInit {
   title = 'angular-signals-integration';
 
   // @ts-ignore
-  @ViewChild(jsPlumbSurfaceComponent) surfaceComponent:jsPlumbSurfaceComponent;
+  @ViewChild(SurfaceComponent) surfaceComponent:SurfaceComponent;
 
   surface!:Surface
   toolkit!:BrowserUIAngular
